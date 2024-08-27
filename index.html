@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <img class="presentacion__imagen" src="Logo.png" alt ="imagen de el logo de alura">
+        </nav>
+    </header>
+    <main class="presentacion" >
+        <section class="presentacion__texto">
+            <div id="areadetexto">
+
+                <textarea class="Texto" cols="60" rows="20" placeholder="Ingrese el texto aqui" lang="english"></textarea>
+          </div>
+          
+          <div >
+            <h6  class="condicional"><img src="Group.png">Solo letras minúsculas y sin acentos</h6>
+          </div>
+          <div class="botones">
+            <button class="boton-desencriptar" onclick="botonEncriptar()">Encriptar</button>
+            <button  class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+          </div>
+          
+        </section >
+        <section class="aux1">
+
+        
+             <div class="div2">
+            <img class="presentacion__imagen__muñeco" src="Muñeco.png" alt ="imagen de el muñeco de alura">
+            <h2>Ningun mensaje fue encontrado</h2>
+            <p>ingrese el texto que desea encriptar</p>
+             </div>
+        
+        <div   class="boton_copiar_activar">
+            <textarea type="mensaje" id="impresion" class="evaluar"  readonly></textarea>
+            <button type="submit" onclick="copiar()" class="boton-copiar">Copiar</button>
+
+        </div>
+    </section>
+        
+  
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por dante</p>
+    </footer>
+    <script src="/script.js"></script>  
+</body>
+
+</html>
